@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #a56b89;
+
+}
+
+.header {
+    background-color: #b81469;
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+}
+
+.header h1 {
+    font-size: 5em;
+    margin-top: 50px;
+    padding: 50px;
+
+}
+
+.header p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background-color: #b81469;
+    padding: 25px;
+    border-radius: 25px;
+    width: 60%;
+    margin: 10px;
+    color: #ffffff;
+}
+
+.box h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+
+}
+
+.footer {
+    background-color: #b81469;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.parallax1 {
+    background-image: url(https://blog.hospitalveracruz.com.br/wp-content/uploads/2022/10/Hospital-Vera-Cruz-Campanha-Outubro-Rosa-capa-1.jpg);
+}
+
+.parallax2 {
+    background-image: url(https://prolifeengenharia.com.br/wp-content/uploads/2023/09/varias-maos-reunindo-uma-fita-de-saude-rosa-edited-scaled.jpg);
+}
+
+.parallax3 {
+    background-image: url(https://educasc.com.br/wp-content/uploads/2023/10/iStock-1414766690.jpg);
+}
+
+.parallax {
+    height: 70vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    padding: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #a56b89;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+    transition: font-size 0.5s ease, transform 1s ease;
+}
+
+nav ul li a:hover {
+    color: #b81469;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:480px){
+    nav{
+        width: 100%;
+        height: 8%;
+    }
+    nav ul li {
+        margin: 0 1px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .header {
+        font-size: 7px;
+        width: 100%;
+    }
+
+    .header p {
+        font-size: 20px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .header h1 {
+        width: 100%;
+    }
+
+    .content p {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .box {
+        width: 85%;
+    }
+
+    .box h2 {
+        font-size: 30px;
+    }
+    .parallax {
+        height: 40vh;
+    }
+}
+
+@media (max-width:320px){
+    nav{
+        width: 100%;
+        height: 10%;
+    }
+    nav ul li {
+        margin: 0 1px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .header {
+        font-size: 7px;
+        width: 100%;
+    }
+
+    .header p {
+        font-size: 20px;
+        width: 100%;
+        margin: 5px;
+    }
+
+    .header h1 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .content p {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .box {
+        width: 85%;
+    }
+
+    .box h2 {
+        font-size: 30px;
+    }
+    .parallax {
+        height: 40vh;
+    }
+}
